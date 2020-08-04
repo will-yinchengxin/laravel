@@ -1,0 +1,38 @@
+Laravel在Linux中的完整部署
+
+1.
+    composer create-project --prefer-dist laravel/laravel blog "6.*"
+2.
+    php artisan key:generate
+3.nginx部署(宝塔环境下的php-fpm)
+    server {
+            listen        8080;
+            server_name  lms.com;
+            root   "/php/blog/public";
+            location / {
+                index index.php index.html error/index.html;
+                autoindex  off;
+                try_files $uri $uri/ /index.php?$query_string;
+            }
+             location ~ \.php$ {
+                    fastcgi_pass unix:/tmp/php-cgi-73.sock;
+                    fastcgi_index index.php;
+                    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+                    include fastcgi_params;
+             }
+    }
+
+
+    在总配置文件中引入
+    http {
+       //...
+        include /php/nginx.conf;
+       //....
+4.出现报错信息
+    The stream or file "/data/www/laravel/storage/logs/laravel.log" could not be opened: failed to open stream: Permission denied
+    解决:
+
+    找到一组用户及用户组赋权限即可
+     cat /etc/passwd
+     cat /etc/group
+    chown -R www:www storage/
