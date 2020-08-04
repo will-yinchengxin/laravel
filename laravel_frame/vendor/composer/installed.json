@@ -1,0 +1,32 @@
+[
+    {
+        "name": "willyin/laravelstar",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "dist": {
+            "type": "path",
+            "url": "../laravelstar",
+            "reference": "91540f12d048c04a19a8f8bca765f452ce8a8b4b"
+        },
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "LaravelStar\\": "src/"
+            },
+            "files": [
+                "src\\Support\\helpers.php"
+            ]
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "will",
+                "email": "826895143@qq.com"
+            }
+        ],
+        "description": "this is branch for laravel"
+    }
+]

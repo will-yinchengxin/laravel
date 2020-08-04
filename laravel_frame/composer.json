@@ -1,0 +1,25 @@
+{
+    "name": "willyin/laravel_frame",
+    "description": "this is the main frame for laravel",
+    "type": "project",
+    "authors": [
+        {
+            "name": "will",
+            "email": "826895143@qq.com"
+        }
+    ],
+    "repositories": {
+        "willyin": {
+            "type" : "path",
+            "url" : "../laravelstar"
+        }
+    },
+    "require": {
+        "willyin/laravelstar" : "master-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app"
+        }
+    }
+}

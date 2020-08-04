@@ -1,0 +1,48 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "5460bce946a78c98a9e745da33404ebb",
+    "packages": [
+        {
+            "name": "willyin/laravelstar",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../laravelstar",
+                "reference": "91540f12d048c04a19a8f8bca765f452ce8a8b4b"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LaravelStar\\": "src/"
+                },
+                "files": [
+                    "src\\Support\\helpers.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "will",
+                    "email": "826895143@qq.com"
+                }
+            ],
+            "description": "this is branch for laravel"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "willyin/laravelstar": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

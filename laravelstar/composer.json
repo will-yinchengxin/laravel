@@ -1,0 +1,21 @@
+{
+    "name": "willyin/laravelstar",
+    "description": "this is branch for laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "will",
+            "email": "826895143@qq.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "LaravelStar\\": "src/"
+        },
+        "files": [
+            "src\\Support\\helpers.php"
+        ]
+    }
+}
